@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 10px 40px;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    min-height: 240px;
+    max-width: 640px;
+    border: 1px solid black; 
+    flex: 1;
+}
+
+.display {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: grey;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#screen {
+    background-color: rgb(144, 211, 144);
+    min-height: 48px;
+    min-width: 360px;
+    flex: 1;
+    border: 2px solid black;
+    font-size: 40px;
+    color: rgb(58, 82, 58);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.buttons {
+    display: flex;
+    flex: 2;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.row div {
+    border: solid black 1px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.numbers .row div {
+    background-color: rgb(223, 209, 209);
+}
+
+.operators .row div {
+    background-color: rgb(165, 164, 164);
+    font-weight: 700;
+}
+
+.row {
+    padding: 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    flex: 1;
+}
+
+.numbers {
+    display: flex;
+    background-color: rgb(99, 74, 74);
+    flex: 1;
+    gap: 5px;
+    justify-content: stretch;
+    align-items: stretch;
+    border-right: 1px solid black;
+}
+
+.operators {
+    display: flex;
+    background-color: rgb(170, 184, 196);
+    flex: 1;
+    gap: 5px;
+    justify-content: stretch;
+    align-items: stretch;
+}
